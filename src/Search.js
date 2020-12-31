@@ -13,7 +13,7 @@ class Search extends Component {
     this.makeApiCall(this.state.searchValue);
   };
   makeApiCall = (searchInput) => {
-    var searchUrl = `http://127.0.0.1:5000/api/v1/resources/stocks?stockName=${searchInput}`;
+    var searchUrl = `https://pyservice-st.herokuapp.com/api/v1/resources/stocks?stockName=${searchInput}`;
     fetch(searchUrl)
       .then((response) => {
         return response.json();
