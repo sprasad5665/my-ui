@@ -26,7 +26,7 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <h1>Welcome to the search app</h1>
+        <h1>Welcome to the stock info</h1>
         <input
           name="text"
           type="text"
